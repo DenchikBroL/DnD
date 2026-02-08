@@ -115,3 +115,27 @@ body {
 .close-btn:hover {
   color: #fff;
 }
+
+/* Для Chrome, Edge, Opera */
+::-webkit-scrollbar {
+  width: 6px; /* товщина */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* без білої смуги */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(80, 80, 80, 0.6); /* темний повзунок */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 120, 120, 0.8);
+}
+
+/* Для Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(80,80,80,0.6) transparent;
+}
